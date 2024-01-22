@@ -1,1 +1,1 @@
-# codingtest
+# Coding Test Study
