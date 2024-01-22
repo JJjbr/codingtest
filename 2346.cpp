@@ -14,13 +14,10 @@ int main()
 
     int idx = balloon[0] > 0 ? balloon[0] : N + balloon[0];
     balloon[0] = 0;
-    cout << 1 << ' ';
-    for (int i = 1; i < N; i++)
+    cout << 1 << ' ' << idx + 1 << ' ';
+    for (int i = 2; i < N; i++)
     {
-        cout << idx + 1 << ' ';
-        if (i >= N - 1) break;
-
-        // set next index
+        // find next index
         int cnt = 0, tmp = balloon[idx];
         balloon[idx] = 0;
         if (tmp > 0)
@@ -33,7 +30,6 @@ int main()
                     cnt++;
                 }
             }
-
         }
         else
         {
@@ -46,6 +42,8 @@ int main()
                 }
             }
         }
+        // print result
+        cout << idx + 1 << ' ';
     }
     return 0;
 }
