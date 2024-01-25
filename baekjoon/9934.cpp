@@ -21,7 +21,7 @@ void find_tree(int n)
 
 int main()
 {
-	std::ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 	cin >> K;
 	answer = new vector<int>[K];
