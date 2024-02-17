@@ -2,7 +2,6 @@
 using namespace std;
 
 int map[1026][1026];
-int sum[1026][1026];
 
 int main()
 {
