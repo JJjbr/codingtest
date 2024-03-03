@@ -36,7 +36,6 @@ bool checkPass() {
 			}
 			if (same == K) break;
 		}
-		//cout << i << " " << same << "\n";
 		if (same < K) return false;
 	}
 	return true;
@@ -44,10 +43,8 @@ bool checkPass() {
 
 void dfs(int n, int cnt) {
 	if (cnt >= ans) return;
-	//cout << "ok " << n << " " << cnt << "\n";
 	if (checkPass()) {
 		if (ans > cnt) ans = cnt;
-		//cout << "true " << ans << "\n";
 	}
 	if (n >= D) {
 		return;
@@ -85,24 +82,3 @@ int main() {
 	}
 	return 0;
 }
-
-//int main() {
-//	int T;
-//	cin >> T;
-//	for (int t = 1; t <= T; t++) {
-//		int price[4];
-//		for (int i = 0; i < 4; i++) {
-//			cin >> price[i];
-//		}
-//		int plan[13] = { 0, };
-//		for (int i = 1; i <= 12; i++) {
-//			cin >> plan[i];
-//		}
-//		for (int i = 1; i <= 12; i++) {
-//			for (int j = 0; j < 4; j++) {
-//				
-//			}
-//		}
-//	}
-//	return 0;
-//}
